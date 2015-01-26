@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:id="@+id/relativeLayout"
+    android:background="#ffffffff"
+    tools:ignore="RtlSymmetry">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:layout_weight="0"
+        android:id="@+id/boardLayout"
+        android:orientation="vertical"
+        android:weightSum="3"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:paddingBottom="5dp"
+            android:id="@+id/boardTopBar"
+            android:background="#009f9f9f">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:minHeight="90dp"
+                android:id="@+id/tl"
+                android:background="#ff0060c3"
+                android:layout_marginRight="5dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:minHeight="90dp"
+                android:id="@+id/tm"
+                android:background="#ff0060c3" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:minHeight="90dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tr"
+                android:background="#ff0060c3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:minHeight="90dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/ml"
+                android:background="#ff0060c3" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:minHeight="90dp"
+                android:id="@+id/m"
+                android:background="#ff0060c3"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:minHeight="90dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/mr"
+                android:background="#ff0060c3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:minHeight="90dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/bl"
+                android:background="#ff0060c3" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:minHeight="90dp"
+                android:id="@+id/bm"
+                android:background="#ff0060c3" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:minHeight="90dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/br"
+                android:background="#ff0060c3" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Current Turn: "
+        android:id="@+id/currentTurnMsg"
+        android:textColor="#ff414141"
+        android:layout_below="@+id/boardLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="Naught"
+        android:id="@+id/turnIndicator"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/restartButton"
+        android:layout_below="@+id/currentTurnMsg"
+        android:textColor="#ff2d2d2d"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:id="@+id/restartButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

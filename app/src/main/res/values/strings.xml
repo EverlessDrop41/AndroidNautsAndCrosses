@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NaughtsAndCrosses</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="naught">Naught</string>
+    <string name="cross">Cross</string>
+    <string name="naughtWin">Naught Wins!</string>
+    <string name="crossWin">Cross Wins!</string>
+    <string name="draw">Draw!</string>
+
+</resources>
